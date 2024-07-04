@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputbox" onkeyup="change()">
+    
+    <h1 id="result"></h1>
+    
+
+    <script>
+        var input1=document.getElementById("inputbox")
+        var result=document.getElementById("result")
+        
+
+        function change(){
+            var content=input1.value  //this line is written inside as it will return zero when written outside as only after onclicking the text is grabbed and before that it is empty
+            result.textContent=content
+        }
+    </script>
+</body>
+</html>

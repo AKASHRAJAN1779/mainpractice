@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <button onclick="divide()">divide</button>
+    <p id="result">result</p>
+    <script>
+        function divide(){
+            let num1=document.getElementById("n1").value
+            let num2=document.getElementById("n2").value
+            var result=document.getElementById("result")
+            var output=Number(num1)/Number(num2)
+            result.textContent=output
+        }
+    </script>
+</body>
+</html>
